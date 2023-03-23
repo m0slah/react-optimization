@@ -8,6 +8,8 @@ import Card from "./Components/UI/Card";
 function App() {
   const [showParagraph, setShowParagraph] = useState(false);
 
+  console.log("APP RUNNING!");
+
   const toggleParagraphHandler = () => {
     setShowParagraph((prevShowParagraph) => !prevShowParagraph);
   };
@@ -16,7 +18,7 @@ function App() {
     <div className="App">
       <Card>
         <h1>Hello There</h1>
-        <DemoOutput onShow={showParagraph} />
+        <DemoOutput onShow={false} />
         <Button onClick={toggleParagraphHandler}>Paragraph Toggle</Button>
       </Card>
     </div>
